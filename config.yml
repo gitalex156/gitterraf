@@ -1,0 +1,22 @@
+monitoring:
+  port: 16302
+status:
+  port: 16301
+channels:
+  - name: yc_metrics_channel
+    channel:
+      output:
+        plugin: yc_metrics
+        config:
+          folder_id: 'b1g...........'
+          iam:
+            cloud_meta: {}
+routes:
+  - input:
+      id: linux_metric_input
+      plugin: linux_metrics
+      config:
+        poll_period: 60s
+    channel:
+      channel_ref:
+        name: yc_metrics_channel

@@ -1,0 +1,17 @@
+yc_service_account_key_file = "../key.json"
+yc_cloud_id                 = "b1g..........."
+yc_folder_id                = "b1g..........."
+yc_zone                     = "ru-central1-b"
+subnet_id                   = "e2l............"
+docker_username             = "docker..."
+docker_password             = "gl.........p"
+instance_cores              = 2
+instance_memory             = 2
+core_fraction               = 20
+disk_size                   = 15
+instance_name               = "staging-instance"
+ssh_public_key              = "~/.ssh/id_rsa.pub"
+ssh_private_key             = "~/.ssh/id_rsa"
+docker_image_name           = "registry.gitlab.com/lesson.../...:latest"
+docker_registry_url         = "https://registry.gitlab.com"
+config_file_path            = "config.yml"
